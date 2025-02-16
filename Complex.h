@@ -186,7 +186,7 @@ public:
 	//
 	bool operator==(Complex b)
 	{
-		double epsilon = 1.0 / (100000000000000.0); //1/10^14
+		double epsilon = 1.0 / (1000000000000000.0); // 1/10^15
 		if ((std::abs(this->real - b.getreal()) <= epsilon) && (std::abs(this->real - b.getreal()) <= epsilon))
 			return true;
 		else
@@ -194,7 +194,7 @@ public:
 	}
 	bool operator!=(Complex b)
 	{
-		double epsilon = 1.0 / (100000000000000.0); //1/10^14
+		double epsilon = 1.0 / (1000000000000000.0); // 1/10^15
 		if ((std::abs(this->real - b.getreal()) <= epsilon) && (std::abs(this->real - b.getreal()) <= epsilon))
 			return false;
 		else
